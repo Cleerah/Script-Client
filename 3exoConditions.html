@@ -2,12 +2,14 @@
 <html lang="fr">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Exercise - Conditions</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exo Conditions</title>
 </head>
 
 <body>
+
+
   <script>
     //exo1
     const estPresent = true;
@@ -16,6 +18,55 @@
     } else {
       console.log("L'élève n'est pas présent");
     };
+
+    //exo2
+    console.log(estPresent ? "L'élève est présent" : "L'élève n'est pas présent");
+
+    //exo3
+    const etatEbriete = prompt("Quel était l'état d'ébriété du ministre (0 = sobre, 1 = joyeux, 2 = ivre) : ");
+    if (etatEbriete == 0) {
+      console.log("Le ministre est sobre et responsable !");
+    } else if (etatEbriete == 1) {
+      console.log("Le ministre était joyeux");
+    } else if (etatEbriete == 2) {
+      console.log("Le ministre était ivre");
+    } else {
+      console.log("Erreur ! État d'ébriété inconnu !");
+    }
+
+    //exo4
+
+    switch (etatEbriete) {
+      case 0:
+        console.log("Le ministre est sobre et responsable !");
+        break;
+      case 1:
+        console.log("Le ministre était joyeux");
+        break;
+      case 2:
+        console.log("Le ministre était ivre");
+        break;
+      default:
+        console.log("Erreur ! État d'ébriété inconnu !");
+    }
+
+    //exo5
+    const estLa = true;
+    const aFaitPipi = true;
+    const estEmeche = false;
+    if (estLa) {
+      if (aFaitPipi) {
+        if (estEmeche) {
+          console.log("Le ministre ne se souvient pas de tout à cause de son état d'ébriété.");
+        } else {
+          console.log("Le ministre était en train de jouer un air de guitare devant ses invités.");
+        }
+      } else {
+        console.log("Le ministre était là, mais il ne savait rien des agissements de ses invités.");
+      }
+    } else {
+      console.log("Le ministre n'était pas là pendant l'incident.");
+    }
 
   </script>
 </body>
