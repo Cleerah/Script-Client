@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exo Boucles part2</title>
+  </head>
+  <body>
+    <script>
+      //exo6
+      const laFineEquipe = ["Claudy", "Jean-Claude", "Laurence"];
+      for (const element of laFineEquipe) {
+        console.log(element);
+      }
+      //exo7
+      for (const preNom in laFineEquipe) {
+        console.log("laFineEquipe" + " " + laFineEquipe[preNom]);
+      }
+      //exo8
+      for (let i = 0; i < laFineEquipe.length; i++) {
+        console.log(laFineEquipe[i]);
+      }
+      //exo9
+      for (let i = laFineEquipe.length - 1; i >= 0; i--) {
+        console.log(laFineEquipe[i]);
+      }
+      //exo10
+      const matrice = [
+        ["-1-", "-2-", "-3-"],
+        ["-4-", "-5-", "-6-"],
+        ["-7-", "-8-", "-9-"],
+      ];
+      let resultat = "";
+      for (let i = 0; i < matrice.length; i++) {
+        for (let j = 0; j < matrice[i].length; j++) {
+          resultat += matrice[i][j] + " ";
+        }
+        resultat += "\n";
+      }
+      console.log(resultat);
+      //exo11
+      const matriceHauteurLargeur = 3;
+      let resultat2 = "";
+
+      for (let i = 1; i <= matriceHauteurLargeur; i++) {
+        for (let j = 1; j <= matriceHauteurLargeur; j++) {
+          let value = (i - 1) * matriceHauteurLargeur + j;
+        }
+        resultat2 += "\n";
+      }
+
+      console.log(resultat2);
+      /* Affiche :
+    -1- -2- -3-
+    -4- -5- -6-
+    -7- -8- -9-
+*/
+    </script>
+  </body>
+</html>
