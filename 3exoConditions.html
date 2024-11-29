@@ -23,7 +23,7 @@
     console.log(estPresent ? "L'élève est présent" : "L'élève n'est pas présent");
 
     //exo3
-    const etatEbriete = prompt("Quel était l'état d'ébriété du ministre (0 = sobre, 1 = joyeux, 2 = ivre) : ");
+    const etatEbriete = parseInt(prompt("Quel était l'état d'ébriété du ministre (0 = sobre, 1 = joyeux, 2 = ivre) : "));
     if (etatEbriete == 0) {
       console.log("Le ministre est sobre et responsable !");
     } else if (etatEbriete == 1) {
@@ -35,7 +35,7 @@
     }
 
     //exo4
-
+    console.log("exo4")
     switch (etatEbriete) {
       case 0:
         console.log("Le ministre est sobre et responsable !");
