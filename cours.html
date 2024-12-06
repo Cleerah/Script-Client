@@ -7,82 +7,39 @@
     <title>Cours exo Conditions</title>
 </head>
 
-<body>
+<body style="background-color: black;">
     <script>
-        //exo1
-        console.log("Exo 1");
-        const estPresent = true;
-        if (estPresent) {
-            console.log("Le ministre était présent")
-        }
-        else {
-            console.log("Le ministre était absent")
-        };
+        function analyserNotes(notes) {
+            // Vérifie que le tableau est valide (optionnel)
 
-        //exo2
-        console.log("Exo 2");
+            // Calcul de la moyenne
+            let somme = 0;
 
-        console.log(estPresent) ? "Le ministre était présent" : "Le ministre était absent";
+            // Trouver la note la plus élevée
+            let max = -Infinity;
 
-        //exo3
-        console.log("Exo 3");
+            // Trouver la note la plus basse
+            let min = Infinity;
 
-        const etatEbriete = parseInt(prompt("Quel était l'état d'ébriété du ministre (0 = sobre, 1 = joyeux, 2 = ivre) : "));
-
-        if (etatEbriete == 0) {
-            console.log("Le ministre est sobre et responsable !");
-        }
-        else if (etatEbriete == 1) {
-            console.log("Le ministre est joyeux !");
-        }
-        else if (etatEbriete == 2) {
-            console.log("Le ministre est ivre !");
-        }
-        else {
-            console.log("Erreur ! État d'ébriété inconnu !");
-        }
-        //exo4
-        console.log("Exo 4");
-
-        switch (etatEbriete) {
-            case 0:
-                console.log("Le ministre est sobre et responsable !");
-                break;
-            case 1:
-                console.log("Le ministre est joyeux !");
-                break;
-            case 2:
-                console.log("Le ministre est ivre !");
-                break;
-            default:
-                console.log("Erreur ! État d'ébriété inconnu !");
-        }
-
-        //exo5
-        console.log("Exo 5");
-
-        const estPresent2 = true;
-        const aFaitPipi = true;
-        const estEmeche = false;
-        if (estPresent2) {
-            if (aFaitPipi) {
-                if (estEmeche) {
-                    console.log("Le ministre ne se souvient pas de tout à cause de son état d'ébriété.")
-                }
-                else {
-                    console.log("Le ministre était en train de jouer un air de guitare devant ses invités.")
-                }
-
-            }
-            else {
-                console.log("Le ministre était là, mais il ne savait rien des agissements de ses invités.")
+            // Boucle pour parcourir le tableau et faire les calculs
+            for (let note of notes) {
+                // ... Ajoute ici tes calculs pour somme, max, et min
             }
 
+            // Calcul final de la moyenne
+            let moyenne = somme / notes.length;
+
+            // Afficher les résultats
+            console.log(`Moyenne des notes : ${moyenne}`);
+            console.log(`Note la plus élevée : ${max}`);
+            console.log(`Note la plus basse : ${min}`);
         }
-        else {
-            console.log("Le ministre n'était pas là pendant l'incident.")
-        }
+
+        // Appelle la fonction avec un exemple
+        analyserNotes([12, 15, 8, 19, 10]);
+
     </script>
 </body>
+
 
 </html>
